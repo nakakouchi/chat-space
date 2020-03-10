@@ -1,0 +1,36 @@
+.main_chat
+  .main_chat__main-header
+    .left-box
+      .current-group
+        test
+      .member-list
+        Member:name
+    .edit-btn
+      = link_to "#", class: "edit-btn__btn" do
+        Edit
+  .main_chat__messages
+    .message
+      .upper-info
+        .talker
+          name
+        .date
+          2020/3/9(Mon) 12:00:00
+      .text
+        こんにちわ
+    .message
+      .upper-info
+        .talker
+          name
+        .date
+          2020/3/9(Mon) 22:00:00
+      .text
+        こんばんわ
+        
+  .main_chat__form
+    %form.new_message
+      .input-box
+        %input.input-box__text{type: "text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon("fas", "image")
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "SEND"}
