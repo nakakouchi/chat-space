@@ -37,15 +37,20 @@
       height: 45px;
       width: 100%;
       margin: 0 0 40px;
-        .group-name {
-          font-size: 15px;
-          padding: 0 0 5px;
-        }
-        .message {
-          font-size: 11px;
-        }
+      color: white;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a .group-name{
+        font-size: 15px;
+        font-weight: bold;
+        padding: 0 0 5px;
+      }
+      a .message {
+        font-size: 11px;
+      }
     }
-
   }
 }
 
