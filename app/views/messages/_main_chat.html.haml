@@ -4,6 +4,7 @@
       .current-group
         =@group.name
       .member-list
+        Member : 
         -@group.users.each do |user|
           =user.name
 
